@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emdsys.android.gmailopenpage.Main2Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00796B"
+        android:id="@+id/custom_action_bar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/back_button"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/back_button" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/watsapp_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_drawer"
+             />
+
+
+
+            <TextView
+                android:id="@+id/intent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right">
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/settings_button" />
+
+            <ImageView
+                android:id="@+id/attach_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/settings"
+                android:src="@drawable/attach_button" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/custom_action_bar"
+        android:id="@+id/chat_texts"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/smiley_button"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ok_button1"
+            app:siBorderColor="#000000"
+            app:siBorderWidth="1dp" />
+
+
+        <EditText
+            android:id="@+id/chat_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#ffffff"
+            android:hint="Type your message" >
+        </EditText>
+
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ok_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ok_button1"
+            app:siBorderColor="#000000"
+            app:siBorderWidth="1dp" />
+
+        <!--<Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send" >
+        </Button>-->
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00796B"
+        android:id="@+id/bottom_bar"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/watsapp_webview">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>-->
+
+
+</RelativeLayout>
